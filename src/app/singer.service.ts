@@ -19,12 +19,8 @@ export class SingerService {
     this.singers.push(newSinger);
   }
 
-  getSingerByID(singerID: number){
-    // for (var i = 0; i <= SINGERS.length - 1; i++) {
-    //   if (SINGERS[i].id === singerID) {
-    //     return SINGERS[i];
-    //   }
-    // }
+  getSingerByID(singerID: string){
+    return this.database.object('singers/' + singerID);
   }
 
 }
