@@ -24,11 +24,16 @@ export class SingerService {
   }
 
   updateSinger(localUpdatedSinger){
-    var albumEntryInFirebase = this.getSingerByID(localUpdatedSinger.$key);
-    albumEntryInFirebase.update({name: localUpdatedSinger.name,
+    var singerInFirebase = this.getSingerByID(localUpdatedSinger.$key);
+    singerInFirebase.update({name: localUpdatedSinger.name,
                                 voice: localUpdatedSinger.voice,
                                 office: localUpdatedSinger.office,
                                 folder: localUpdatedSinger.folder});
+  }
+
+  deleteSinger(localSingerToDelete){
+    var singerInFirebase = this.getSingerByID(localSingerToDelete.$key);
+    singerInFirebase.remove();
   }
 
 }
