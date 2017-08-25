@@ -1,6 +1,6 @@
 <h2>Singers Roster</h2>
 
-<div *ngFor="let singer of singers" class="panel panel-default">
+<div *ngFor="let singer of singers" (click)="goToDetail(singer)" class="panel panel-default">
   <div class="panel-body">
     <h3>{{singer.name}} - <em>{{singer.voice}}</em></h3>
   </div>
