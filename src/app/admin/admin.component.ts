@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Singer } from '../singer.model';
 
 @Component({
   selector: 'app-admin',
