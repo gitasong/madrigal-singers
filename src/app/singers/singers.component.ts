@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Singer } from '../singer.model';
 import { SingerService } from '../singer.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { SingerService } from '../singer.service';
   providers: [SingerService]
 })
 export class SingersComponent implements OnInit {
-  singers: Singer[];
+  singers: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private singerService: SingerService) { }
 
