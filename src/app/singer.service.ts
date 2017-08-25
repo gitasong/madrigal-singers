@@ -5,6 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class SingerService {
+  singers: FirebaseListObservable<any[]>;
 
   constructor() { }
 
