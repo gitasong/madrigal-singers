@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SingerService } from '../singer.service';
 import { Singer } from '../singer.model';
 
 @Component({
@@ -8,7 +9,7 @@ import { Singer } from '../singer.model';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private singerService: SingerService) { }
 
   ngOnInit() {
   }
