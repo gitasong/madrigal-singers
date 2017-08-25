@@ -11,7 +11,7 @@ import { Singer } from '../singer.model';
 })
 
 export class SingerDetailComponent implements OnInit {
-  singerID: number = 17;
+  singerID: number = null;
 
   constructor(private route: ActivatedRoute, private location: Location) { }
 
