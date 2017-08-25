@@ -15,7 +15,7 @@ import { SingerService } from '../singer.service';
 export class SingerDetailComponent implements OnInit {
   singerID: number = null;
 
-  constructor(private route: ActivatedRoute, private location: Location) { }
+  constructor(private route: ActivatedRoute, private location: Location, private singerService: SingerService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
