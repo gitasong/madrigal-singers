@@ -21,4 +21,10 @@ export class EditSingerComponent implements OnInit {
     this.singerService.updateSinger(singerToUpdate);
   }
 
+  confirmDelete(singerToDelete){
+    if(confirm("Are you sure you want to delete this singer from the roster?")){
+      this.singerService.deleteSinger(singerToDelete);
+    }
+  }
+
 }
