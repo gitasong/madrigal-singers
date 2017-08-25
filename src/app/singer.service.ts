@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Singer } from './singer.model';
 import { SINGERS } from './singer-data';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class SingerService {
