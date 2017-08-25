@@ -16,11 +16,11 @@ export class SingerService {
   }
 
   getSingerByID(singerID: number){
-    for (var i = 0; i <= SINGERS.length - 1; i++) {
-      if (SINGERS[i].id === singerID) {
-        return SINGERS[i];
-      }
-    }
+    // for (var i = 0; i <= SINGERS.length - 1; i++) {
+    //   if (SINGERS[i].id === singerID) {
+    //     return SINGERS[i];
+    //   }
+    // }
   }
 
 }
