@@ -26,7 +26,7 @@ export class SingersComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToDetail(clickedSinger) {
+  goToDetail(clickedSinger: Singer) {
     this.router.navigate(['singers', clickedSinger.id]);
   };
 }
