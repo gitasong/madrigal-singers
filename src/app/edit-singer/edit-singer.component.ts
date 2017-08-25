@@ -17,4 +17,8 @@ export class EditSingerComponent implements OnInit {
   ngOnInit() {
   }
 
+  beginUpdating(singerToUpdate){
+    this.singerService.updateSinger(singerToUpdate);
+  }
+
 }
