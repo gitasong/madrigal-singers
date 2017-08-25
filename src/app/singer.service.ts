@@ -7,4 +7,8 @@ export class SingerService {
 
   constructor() { }
 
+  getSingers() {
+    return SINGERS;
+  }
+
 }
