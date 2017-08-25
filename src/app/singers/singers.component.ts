@@ -17,6 +17,7 @@ export class SingersComponent implements OnInit {
   constructor(private router: Router, private singerService: SingerService) { }
 
   ngOnInit() {
+    this.singers = this.singerService.getSingers();
   }
 
   goToDetail(clickedSinger: Singer) {
