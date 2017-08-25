@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Singer } from '../singer.model';
 
 @Component({
   selector: 'app-singers',
