@@ -15,6 +15,10 @@ export class SingerService {
     return this.singers;
   }
 
+  addSinger(newSinger: Singer) {
+    this.singers.push(newSinger);
+  }
+
   getSingerByID(singerID: number){
     // for (var i = 0; i <= SINGERS.length - 1; i++) {
     //   if (SINGERS[i].id === singerID) {
