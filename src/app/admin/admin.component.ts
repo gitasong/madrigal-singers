@@ -13,4 +13,9 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  submitForm(name: string, voice: string, office: string, folder: number) {
+    var newSinger: Singer = new Singer(name, voice, office, folder);
+    console.log(newSinger);
+  }
+
 }
