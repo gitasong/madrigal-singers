@@ -9,10 +9,11 @@ import { Singer } from '../singer.model';
   templateUrl: './singer-detail.component.html',
   styleUrls: ['./singer-detail.component.css']
 })
+
 export class SingerDetailComponent implements OnInit {
   singerID: number = 17;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
   }
