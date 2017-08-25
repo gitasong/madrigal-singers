@@ -1,0 +1,44 @@
+{ "singers": [{
+    "name": "Lennie Cottrell",
+    "voice": "Tenor 2",
+    "office": "conductor, co-director",
+    "folder": "0",
+    "id": "1"
+    }, {
+    "name": "Nicole Freed",
+    "voice": "Soprano 1",
+    "office": "co-director",
+    "folder": "1",
+    "id": "2"
+      }, {
+    "name": "Nathan Daniel",
+    "voice": "Tenor 1",
+    "office": "treasurer, section leader",
+    "folder": "2",
+    "id": "3"
+      }, {
+    "name": "Alex Ibiza",
+    "voice": "Alto 1",
+    "office": "secretary, section leader",
+    "folder": "3",
+    "id": "4"
+      }, {
+    "name": "Omeran Abatu",
+    "voice": "Baritone/Bass 1",
+    "office": "webmaster, section leader",
+    "folder": "4",
+    "id": "5"
+      }, {
+    "name": "Cindy Serrano",
+    "voice": "Soprano 2",
+    "office": "singer, section leader",
+    "folder": "5",
+    "id": "6"
+      }, {
+    "name": "Kimiko Shuri",
+    "voice": "Alto 2",
+    "office": "singer, publicity",
+    "folder": "6",
+    "id": "7"
+  }]
+}
