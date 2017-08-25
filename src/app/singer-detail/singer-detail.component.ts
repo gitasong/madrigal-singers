@@ -16,6 +16,9 @@ export class SingerDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.singerID = parseInt(urlParameters['id']);
+    });
   }
 
 }
