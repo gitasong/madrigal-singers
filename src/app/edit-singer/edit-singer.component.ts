@@ -12,7 +12,7 @@ import { SingerService } from '../singer.service';
 export class EditSingerComponent implements OnInit {
   @Input() selectedSinger;
 
-  constructor() { }
+  constructor(private singerService: SingerService) { }
 
   ngOnInit() {
   }
