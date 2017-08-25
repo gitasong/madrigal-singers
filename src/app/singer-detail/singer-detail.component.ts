@@ -13,7 +13,7 @@ import { SingerService } from '../singer.service';
 })
 
 export class SingerDetailComponent implements OnInit {
-  singerID: number;
+  singerID: string;
   singerToDisplay: Singer;
 
   constructor(private route: ActivatedRoute, private location: Location, private singerService: SingerService) { }
