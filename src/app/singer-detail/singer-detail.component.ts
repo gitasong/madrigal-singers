@@ -20,7 +20,7 @@ export class SingerDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.singerID = parseInt(urlParameters['id']);
+      this.singerID = urlParameters['id'];
     });
     // this.singerToDisplay = this.singerService.getSingerByID(this.singerID);
   }
