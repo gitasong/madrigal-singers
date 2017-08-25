@@ -23,4 +23,12 @@ export class SingerService {
     return this.database.object('singers/' + singerID);
   }
 
+  updateSinger(localUpdatedSinger){
+    var albumEntryInFirebase = this.getSingerByID(localUpdatedSinger.$key);
+    albumEntryInFirebase.update({name: localUpdatedSinger.name,
+                                voice: localUpdatedSinger.voice,
+                                office: localUpdatedSinger.office,
+                                folder: localUpdatedSinger.folder});
+  }
+
 }
