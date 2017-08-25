@@ -1,5 +1,5 @@
 export class Singer {
-  constructor(
+  constructor (
     public name: string,
     public voice: string,
     public role: string,
