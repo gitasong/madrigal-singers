@@ -1,13 +1,15 @@
-<h2>Singers Roster</h2>
+<div class="singer-roster">
+  <h2>Singers Roster</h2>
 
-<div *ngFor="let singer of singers | async" class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetail(singer)">{{singer.name}} - <em>{{singer.voice}}</em></h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <h4>Office: {{singer.office}}</h4>
-      <p>Folder #: {{singer.folder}}</p>
-      <hr>
-      <app-edit-singer [selectedSinger]="singer"></app-edit-singer>
+  <div *ngFor="let singer of singers | async" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetail(singer)">{{singer.name}} - <em>{{singer.voice}}</em></h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <h4>Office: {{singer.office}}</h4>
+        <p>Folder #: {{singer.folder}}</p>
+        <hr>
+        <app-edit-singer [selectedSinger]="singer"></app-edit-singer>
+      </div>
     </div>
   </div>
 </div>
