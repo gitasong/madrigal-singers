@@ -7,7 +7,9 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class SingerService {
   singers: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) { }
+  constructor(private database: AngularFireDatabase) {
+    this.singers = database.list('singers');
+  }
 
   getSingers() {
     return SINGERS;
