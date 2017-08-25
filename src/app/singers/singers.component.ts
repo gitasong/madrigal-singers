@@ -8,7 +8,8 @@ import { SingerService } from '../singer.service';
 @Component({
   selector: 'app-singers',
   templateUrl: './singers.component.html',
-  styleUrls: ['./singers.component.css']
+  styleUrls: ['./singers.component.css'],
+  providers: [SingerService]
 })
 export class SingersComponent implements OnInit {
   singers: Singer[];
