@@ -22,7 +22,7 @@ export class SingerDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.singerID = urlParameters['id'];
     });
-    // this.singerToDisplay = this.singerService.getSingerByID(this.singerID);
+    this.singerToDisplay = this.singerService.getSingerByID(this.singerID);
   }
 
 }
