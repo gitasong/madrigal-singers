@@ -12,7 +12,7 @@ export class SingerService {
   }
 
   getSingers() {
-    return SINGERS;
+    return this.singers;
   }
 
   getSingerByID(singerID: number){
