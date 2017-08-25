@@ -41,6 +41,16 @@ In addition, you will need to set up a Firebase account:
   * Choose your country/region from the dropdown.
   * Overview area: choose `Add Firebase to your web app`.
   * Save the information in the popup modal that appears. You'll need it for the API Keys step.
+  * Database area (see left-hand nav bar): click on RULES in the blue navbar reading Realtime Database.
+  * Change both the ".read", and ".write" properties to "true", like so:
+  >`{`
+  >>`"rules": {`
+    >>>`".read": "true",`<br/>
+    >>>`".write": "true"`<br/>
+
+  >>`}`<br/>
+
+  >`}`<br/>
 
 ## API Keys (REQUIRED)
 
