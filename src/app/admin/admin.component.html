@@ -27,6 +27,8 @@
         <br>
         <input #newFolder>
       </div>
+
+      <button (click)="submitForm(newName.value, newVoice.value, newOffice.value, newFolder.value); newName.value=''; newVoice.value=''; newOffice.value=''; newFolder.value=''">Add New Singer</button>
     </div>
   </div>
 </div>
