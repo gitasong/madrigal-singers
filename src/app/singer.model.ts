@@ -4,5 +4,6 @@ export class Singer {
     public voice: string,
     public role: string,
     public folder: number,
-    public id: number) { }
+    public id
+    ) { }
 }
