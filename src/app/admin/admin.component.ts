@@ -18,7 +18,7 @@ export class AdminComponent implements OnInit {
 
   submitForm(name: string, voice: string, office: string, folder: number) {
     var newSinger: Singer = new Singer(name, voice, office, folder);
-    console.log(newSinger);
+    this.singerService.addSinger(newSinger);
   }
 
 }
