@@ -20,7 +20,7 @@ export class SingersComponent implements OnInit {
     this.singers = this.singerService.getSingers();
   }
 
-  goToDetail(clickedSinger: Singer) {
-    // this.router.navigate(['singers', clickedSinger.id]);
+  goToDetail(clickedSinger) {
+    this.router.navigate(['singers', clickedSinger.$key]);
   };
 }
