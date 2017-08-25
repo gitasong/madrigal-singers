@@ -10,6 +10,7 @@ import { Singer } from '../singer.model';
   styleUrls: ['./singer-detail.component.css']
 })
 export class SingerDetailComponent implements OnInit {
+  singerID: number = null;
 
   constructor() { }
 
