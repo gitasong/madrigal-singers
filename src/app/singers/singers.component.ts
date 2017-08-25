@@ -13,7 +13,7 @@ import { SingerService } from '../singer.service';
 export class SingersComponent implements OnInit {
   singers: Singer[];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private singerService: SingerService) { }
 
   ngOnInit() {
   }
