@@ -4,7 +4,8 @@
   <div class="panel-body">
     <h3>{{singer.name}} - <em>{{singer.voice}}</em></h3>
     <div *ngIf="currentRoute === '/admin'">
-      <!--displey rest of singer's details-->
+      <h4>Office: {{singer.office}}</h4>
+      <p>Folder #: {{singer.folder}}</p>
     </div>
   </div>
 </div>
