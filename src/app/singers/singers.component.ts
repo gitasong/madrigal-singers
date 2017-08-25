@@ -11,6 +11,8 @@ import { Singer } from '../singer.model';
 })
 export class SingersComponent implements OnInit {
 
+  constructor(private router: Router) { }
+
   singers: Singer[] = [
     new Singer("Lennie Cottrell", "Tenor 2", "conductor, co-director", 0, 1),
     new Singer("Nicole Freed", "Soprano 1", "co-director", 1, 2),
@@ -21,12 +23,10 @@ export class SingersComponent implements OnInit {
     new Singer("Kimiko Shuri", "Soprano 1", "singer", 6, 7)
   ];
 
-  constructor() { }
-
   ngOnInit() {
   }
 
-  goToDetailPage(clickedSinger) {
+  goToDetail(clickedSinger) {
     this.router.navigate(['singers', clickedSinger.id]);
   };
 }
