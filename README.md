@@ -1,4 +1,4 @@
-# MadrigalSingers
+# Madrigal Singers
 
 Web app for a semi-fictitious (real in concept, not yet in execution) madrigal group that allows users to view the roster of singers and click on individual singers to navigate to a detail page. Admins can additionally add new singers, edit singers' details, and delete singers.
 
