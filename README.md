@@ -41,7 +41,7 @@ In addition, you will need to set up a Firebase account:
   * Choose your country/region from the dropdown.
   * Overview area: choose `Add Firebase to your web app`.
   * Save the information in the popup modal that appears. You'll need it for the API Keys step.
-  * Database area (see left-hand nav bar): click on RULES in the blue navbar reading Realtime Database.
+  * Database tab (see left-hand nav bar): click on RULES in the blue navbar reading Realtime Database.
   * Change both the ".read", and ".write" properties to "true", like so:
   >`{`
   >>`"rules": {`
@@ -65,6 +65,15 @@ In addition, you will need to set up a Firebase account:
     `messagingSenderId: "xxxx"`<br/>
 
   >`};`
+
+## Sample Data (OPTIONAL) (Firebase)
+
+If you would like to seed your database with sample data:
+
+* Database tab: Click on the three vertical dots to the right of the project name (itself to the left of the link icon).
+* Choose `Import JSON`.
+* In the popup window that follows, click `Browse` and migrate to the file `singers-data.json` in the top level of the `madrigal-singers` project directory.
+* Click `Import`. The sample data will appear in the database.
 
 ## Development server
 
